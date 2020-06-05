@@ -1,19 +1,9 @@
 import React from "react";
 
-const CalcButtons = ({ calcUI }) => {
+const CalcButtons = ({ id, className, button, setCount }) => {
   return (
-    <div className="grid-container">
-      {calcUI.map((e) => {
-        return (
-          <div
-            key={e}
-            className={e === "=" ? `grid-equal` : `grid-${e}`}
-            onClick={() => console.log("clicked")}
-          >
-            {e}
-          </div>
-        );
-      })}
+    <div className={className} id={id} onClick={setCount(button)}>
+      {button}
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
 
-const Display = () => {
+const Display = ({ display1, display2 }) => {
   return (
     <div id="display">
       <div className="display-container">
-        <div>5 + 12 / 8 </div>
-        <div> 0</div>
+        <div>{display1} </div>
+        <div> {display2}</div>
       </div>
     </div>
   );

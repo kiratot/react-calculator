@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Tenali+Ramakrishna&display=swap");
+
 *,
 *::before,
 *::after {
@@ -9,16 +10,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
 }
+
 :root {
   --imperial-primer: #222f3e;
   --fuel-town: #576574;
   --dark-mountain-meadow: #10ac84;
   --wild-caribbean-green: #1dd1a1;
 }
+
 body {
   outline: 4px solid lightskyblue;
   background: #0f0c29;
@@ -36,11 +40,13 @@ body {
 .calc-container {
   //   outline: 3px solid blue;
   min-width: 20em;
+
   .grid-container {
     height: 20em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
+
     div {
       user-select: none;
       cursor: pointer;
@@ -52,20 +58,24 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+
       &:hover {
         transform: scale(1.05);
       }
     }
-    .grid-AC {
+
+    .grid-clear {
       background-color: royalblue;
       grid-column-start: 1;
       grid-column-end: 3;
     }
-    .grid-equal {
+
+    .grid-equals {
       background-color: var(--wild-caribbean-green);
       grid-row: span 5;
     }
-    .grid-0 {
+
+    .grid-zero {
       grid-column: span 2;
     }
   }
@@ -77,6 +87,7 @@ body {
   position: relative;
   background-color: rgba(0, 0, 0, 0.24);
   padding: 4em 5em;
+
   .display-container {
     font-family: "Inconsolata", monospace;
     width: 98%;
@@ -86,11 +97,13 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
+
     div:first-child {
       font-family: "Inconsolata", monospace;
       color: orange;
       margin-bottom: 1.4em;
     }
+
     div:nth-child(2) {
       font-family: "Inconsolata", monospace;
       color: whitesmoke;
