@@ -5,7 +5,7 @@ export const calcUI = [
   { button: "7", id: "seven" },
   { button: "8", id: "eight" },
   { button: "9", id: "nine" },
-  { button: "-", id: "substract" },
+  { button: "-", id: "subtract" },
   { button: "4", id: "four" },
   { button: "5", id: "five" },
   { button: "6", id: "six" },
